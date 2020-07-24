@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container bg-success p-2 m-5">
+  <form action="regis3.php" method="POST" class="was-validated">
+    <div class="form-group">
+      <label for="uname" class="text-white">*Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="name" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="text-white">*Email:</label>
+      <input type="email" class="form-control" id="eml" placeholder="Enter Email" name="eml" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd" class="text-white">*Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd" class="text-white">*Confirm Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password again" name="pswdc" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pno" class="text-white">*Phone no.:</label>
+      <input type="number" class="form-control" id="pno" placeholder="Enter phone no." name="phno" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group ">
+      <label for="society" class="text-white">*Society:</label>
+      <select name="society" class="custom-select">
+      <option selected>Enter Society Name</option>
+      <option value="gulmohar">Gulmohar Greens</option>
+      <option value="omax">Omax Height</option>
+      <option value="vrind">Vrindawan</option>
+    </select>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="tower" class="text-white">*Tower:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter towername" name="tname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="fno" class="text-white">*Flat no.:</label>
+      <input type="number" class="form-control" id="flno" placeholder="Enter phone no." name="flno" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="add" class="text-white">*Address:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter Address" name="addr" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label text-white">
+        <input class="form-check-input " type="checkbox" name="remember" required> I agree on terms and condition.
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-danger">Sign Up</button>
+  </form>
+</div>
+
+</body>
+</html>
